@@ -1,0 +1,78 @@
+@media only screen and (max-width: 768px) {
+    body {
+        /* Type */
+        display: grid;
+        /* Colour */
+        background-color: #E3CAA2;
+        /* Font */
+        font-family: 'Chelsea Market', cursive;
+        /* Size */
+        max-width:fit-content;
+        /* Border */
+        margin: 0.25rem;
+        /* Grid */
+        grid-template-areas: 
+        'header'
+        'nav'
+        'article'
+        'aside'
+        'footer';
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: none;
+    }    
+
+    header {
+        /* Type */
+        grid-area: header;
+        /* Size */
+        height: 100%;
+        width: 99%;
+        /* Border */
+        margin: 0 0 0.5rem 0;
+        /* Adjustments */
+        text-align: center;
+    }
+    
+    nav {
+        /* Type */
+        grid-area: nav;
+        display: block;
+        /* Size */
+        width: 97%;
+        /* Border */
+        margin: 1rem auto;
+    }
+
+    article {
+        /* Type */
+        grid-area: article;
+        display: block;
+        /* Font */
+        font-size: 1.2rem;
+        /* Size */
+        width: 94%;
+        max-width: none;
+        /* Border */
+        margin: 0 0.5rem;
+    }
+
+    aside {
+        /* Type */
+        grid-area: aside;
+        display: block;
+        /* Size */
+        max-height: none;
+        width: 95%;
+        max-width: none;
+        /* Border */
+        margin: 0 0.5rem;
+    }
+
+    footer {
+        /* Type */
+        grid-area: footer;
+        /* Size */
+        width: 98%;
+        max-width: none;
+    }
+}
